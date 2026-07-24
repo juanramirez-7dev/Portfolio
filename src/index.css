@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #121317;
+  --color-surface-dim: #121317;
+  --color-surface-bright: #38393d;
+  --color-surface-container-lowest: #0d0e12;
+  --color-surface-container-low: #1a1b1f;
+  --color-surface-container: #1e1f23;
+  --color-surface-container-high: #292a2e;
+  --color-surface-container-highest: #333539;
+  --color-on-surface: #e3e2e7;
+  --color-on-surface-variant: #d1c5af;
+  --color-primary: #ecc246;
+  --color-primary-container: #c9a227;
+  --color-on-primary: #3d2e00;
+  --color-secondary: #c6c6c7;
+  --color-outline: #99907b;
+  --color-outline-variant: #4d4635;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .section-container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .section-container {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: 50-60 caracteres, incluye nombre + rol -->
+    <title>Juan José Ramírez Vásquez — Desarrollador de Software | Portfolio</title>
+
+    <!-- Meta description: 120-155 caracteres, resume el valor del portfolio -->
+    <meta
+      name="description"
+      content="Portfolio de Juan José Ramírez Vásquez, desarrollador de software especializado en desarrollo web y backend. Proyectos, stack tecnológico y contacto."
+    />
+
+    <!-- Indexación: permite que Google indexe la página y siga los enlaces -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical: apunta a la URL oficial para evitar contenido duplicado -->
+    <link rel="canonical" href="https://tu-dominio.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Tema para la barra del navegador en móvil -->
+    <meta name="theme-color" content="#121317" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack, Discord) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tu-dominio.com/" />
+    <meta property="og:title" content="Juan José Ramírez Vásquez — Desarrollador de Software | Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio de Juan José Ramírez Vásquez, desarrollador de software especializado en desarrollo web y backend. Proyectos, stack tecnológico y contacto."
+    />
+    <meta property="og:image" content="https://tu-dominio.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Juan José Ramírez Vásquez — Portfolio" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Juan José Ramírez Vásquez — Desarrollador de Software | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio de Juan José Ramírez Vásquez, desarrollador de software especializado en desarrollo web y backend."
+    />
+    <meta name="twitter:image" content="https://tu-dominio.com/og-image.jpg" />
+
+    <!-- Datos estructurados JSON-LD: Person + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://tu-dominio.com/#person",
+          "name": "Juan José Ramírez Vásquez",
+          "url": "https://tu-dominio.com",
+          "image": "https://tu-dominio.com/og-image.jpg",
+          "jobTitle": "Desarrollador de Software",
+          "description": "Desarrollador de software especializado en desarrollo web y backend. Construye aplicaciones completas con Node.js, React, C# y bases de datos relacionales.",
+          "sameAs": [
+            "https://github.com/juanramirez-7dev",
+            "https://www.linkedin.com/in/juan-josé-ramírez-vásquez-90b57b327"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://tu-dominio.com/#website",
+          "name": "Juan José Ramírez Vásquez — Portfolio",
+          "url": "https://tu-dominio.com"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Precarga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
